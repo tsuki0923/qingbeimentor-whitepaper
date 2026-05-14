@@ -560,6 +560,7 @@ select {
 }
 
 .about-grid,
+.company-compact,
 .mentor-map,
 .story-standard-grid,
 .story-arcs,
@@ -571,6 +572,22 @@ select {
 
 .about-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.company-story-card {
+  height: 100%;
+}
+
+.company-story-card h3 {
+  font-size: 1.28rem;
+}
+
+.company-story-card p + p {
+  margin-top: 0.9rem;
+}
+
+.company-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .info-card,
@@ -1306,6 +1323,7 @@ select {
   .hero-grid,
   .process-browser,
   .toolkit-shell,
+  .company-compact,
   .story-layout,
   .craft-layout {
     grid-template-columns: 1fr;
